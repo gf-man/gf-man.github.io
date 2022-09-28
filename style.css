@@ -3,7 +3,10 @@
 	--black: #11110e;
 	--orange: #e1aa11;
 	--blue: #111121;
-	font-family: sans-serif;
+	--cyan: #11aae1;
+	--grey: #1e1e1e;
+	font-family: monospace;
+	font-size: 14px;
 	background-color: var(--black);
 	margin 12px;
 	color: var(--black);
@@ -12,26 +15,53 @@
 
 body {
 	background-color: var(--blue);
-	display: block;
 	color: var(--white);
 	width: 89%;
-	padding-top: 24px;
 	margin: auto;
 }
 
 h1, h2 {
-	background-color: var(--orange);
-	color: var(--black);
-	padding-bottom: 24px;
+	background-color: var(--grey);
+	color: var(--orange);
+	padding: 24px 0px;
 }
 
 h2 {
-	padding-bottom: 12px;
-	width: 33%;
+	padding: 12px 0px;
+	width: 67%;
 	margin: auto
 }
 
 hr {
-	width: 67%;
-	color: var(--black);
+	width: 33%;
+	border: 1px solid var(--white);
+	background-color: var(--white);
+}
+
+p {
+	padding: 12px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--cyan);
+}
+
+table {
+	margin: auto;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 12px;
+	width: 120px;
+	font-size: 16px;
+}
+
+td:not(:last-of-type) {
+	border-right: 2px solid var(--white);
+}
+
+:root {
+	font-size: 11px;
 }
