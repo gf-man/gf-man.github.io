@@ -6,9 +6,10 @@
 	--cyan: #11aae1;
 	--grey: #1e1e1e;
 	font-family: monospace;
-	font-size: 18px;
+	font-size: 100%;
+	font-size: 1em;
 	background-color: var(--black);
-	margin 12px;
+	margin 0px;
 	color: var(--black);
 	text-align: center;
 }
@@ -17,11 +18,13 @@ body {
 	background-color: var(--blue);
 	color: var(--white);
 	width: 89%;
+	font-size: 1em;
 	margin: 5.5% auto;
 }
 
 h1, h2 {
 	background-color: var(--grey);
+	font-size: 2em;
 	color: var(--orange);
 	padding: 24px 0px;
 }
@@ -45,6 +48,7 @@ p {
 }
 
 a {
+	font-weight: bold;
 	text-decoration: none;
 	color: var(--cyan);
 }
@@ -52,11 +56,13 @@ a {
 table {
 	margin: auto;
 	border-collapse: collapse;
+	width: 78%;
+	font-size: 1.25em;
 }
 
 td {
 	padding: 12px;
-	width: 22%;
+	width: 50%;
 }
 
 td:not(:last-of-type) {
