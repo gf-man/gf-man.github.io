@@ -6,7 +6,7 @@
 	--cyan: #11aae1;
 	--grey: #1e1e1e;
 	font-family: monospace;
-	font-size: 14px;
+	font-size: 18px;
 	background-color: var(--black);
 	margin 12px;
 	color: var(--black);
@@ -17,7 +17,7 @@ body {
 	background-color: var(--blue);
 	color: var(--white);
 	width: 89%;
-	margin: auto;
+	margin: 5.5% auto;
 }
 
 h1, h2 {
@@ -28,8 +28,8 @@ h1, h2 {
 
 h2 {
 	padding: 12px 0px;
-	width: 67%;
-	margin: auto
+	width: 78%;
+	margin: auto;
 }
 
 hr {
@@ -40,6 +40,8 @@ hr {
 
 p {
 	padding: 12px;
+	margin: auto;
+	width: 78%;
 }
 
 a {
@@ -54,14 +56,14 @@ table {
 
 td {
 	padding: 12px;
-	width: 120px;
-	font-size: 16px;
+	width: 22%;
 }
 
 td:not(:last-of-type) {
 	border-right: 2px solid var(--white);
 }
 
-:root {
-	font-size: 11px;
+td:hover {
+	background-color: var(--black);
 }
+
