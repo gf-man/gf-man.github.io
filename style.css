@@ -53,6 +53,10 @@ a {
 	color: var(--cyan);
 }
 
+a:hover {
+	color: var(--white);
+}
+
 table {
 	margin: auto;
 	border-collapse: collapse;
@@ -61,7 +65,7 @@ table {
 }
 
 td {
-	padding: 12px;
+	padding: 12px 0;
 	width: 50%;
 }
 
@@ -73,3 +77,24 @@ td:hover {
 	background-color: var(--black);
 }
 
+
+.burger {
+	display: block;
+	cursor: pointer;
+}
+
+.menu {
+	position: fixed;
+	display: flex;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	flex-direction: column;
+	background-color: var(--blue);
+}
+
+.menu .show {
+	display: none;
+	background-color: var(--cyan);
+	opacity: 0;
+}
