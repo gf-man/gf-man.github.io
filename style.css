@@ -15,10 +15,13 @@
 }
 
 body {
-	background-color: var(--blue);
 	color: var(--white);
-	width: 89%;
 	font-size: 1em;
+}
+
+#main-body {
+	background-color: var(--blue);
+	width: 89%;
 	margin: 5.5% auto;
 }
 
@@ -53,6 +56,10 @@ a {
 	color: var(--cyan);
 }
 
+a:hover {
+	color: var(--white);
+}
+
 table {
 	margin: auto;
 	border-collapse: collapse;
@@ -61,7 +68,7 @@ table {
 }
 
 td {
-	padding: 12px;
+	padding: 12px 0;
 	width: 50%;
 }
 
@@ -73,3 +80,50 @@ td:hover {
 	background-color: var(--black);
 }
 
+header {
+	margin: 0;
+}
+
+#burger {
+	display: block;
+	cursor: pointer;
+	padding: 12px;
+	margin: 8px;
+	transition-duration: 0.1s;
+	background-color: var(--grey);
+	border: 2px solid var(--blue);
+	color: var(--cyan);
+}
+
+#burger:hover {
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+#menu {
+	position: fixed;
+	display: none;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	flex-direction: column;
+	background-color: var(--blue);
+}
+
+#menu.show {
+	display: flex;
+}
+
+ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 12px;
+}
+
+li:hover {
+	background-color: var(--grey);
+}
