@@ -15,10 +15,13 @@
 }
 
 body {
-	background-color: var(--blue);
 	color: var(--white);
-	width: 89%;
 	font-size: 1em;
+}
+
+#main-body {
+	background-color: var(--blue);
+	width: 89%;
 	margin: 5.5% auto;
 }
 
@@ -77,15 +80,29 @@ td:hover {
 	background-color: var(--black);
 }
 
-
-.burger {
-	display: block;
-	cursor: pointer;
+header {
+	margin: 0;
 }
 
-.menu {
+#burger {
+	display: block;
+	cursor: pointer;
+	padding: 12px;
+	margin: 8px;
+	transition-duration: 0.1s;
+	background-color: var(--grey);
+	border: 2px solid var(--blue);
+	color: var(--cyan);
+}
+
+#burger:hover {
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+#menu {
 	position: fixed;
-	display: flex;
+	display: none;
 	left: 0;
 	width: 20%;
 	height: 100%;
@@ -93,8 +110,20 @@ td:hover {
 	background-color: var(--blue);
 }
 
-.menu .show {
-	display: none;
-	background-color: var(--cyan);
-	opacity: 0;
+#menu.show {
+	display: flex;
+}
+
+ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 12px;
+}
+
+li:hover {
+	background-color: var(--grey);
 }

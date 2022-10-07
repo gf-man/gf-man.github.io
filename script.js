@@ -1,12 +1,9 @@
-const burger = document.getElementById("burger");
-burger.addEventListener("click", toggleMenu);
-burger.onclick = toggleMenu();
-
-alert("!!!Q");
+window.onload=function() {
+	const burger = document.getElementById("burger");
+	burger.addEventListener("click", toggleMenu);
+}
 
 function toggleMenu() {
 	var menu = document.getElementById("menu");
-	alert("toggle");
-	menu.classList.add("show");
-	menu.style.display = "none";
+	menu.classList.toggle("show");
 }
