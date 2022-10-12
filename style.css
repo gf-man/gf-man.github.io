@@ -1,15 +1,15 @@
 :root {
-	--white: #dddde1;
-	--black: #11110e;
-	--orange: #e1aa11;
-	--blue: #111121;
-	--cyan: #11aae1;
-	--grey: #1e1e1e;
+	--white: #ffffff;
+	--black: #000000;
+	--orange: #ff7700;
+	--dark-blue: #002a3f;
+	--blue: #00aaff;
+	--grey: #222222;
 	font-family: monospace;
 	font-size: 100%;
 	font-size: 1em;
 	background-color: var(--black);
-	margin 0px;
+	margin: 0px;
 	color: var(--black);
 	text-align: center;
 }
@@ -17,10 +17,11 @@
 body {
 	color: var(--white);
 	font-size: 1em;
+	margin: 8px;
 }
 
 #main-body {
-	background-color: var(--blue);
+	background-color: var(--dark-blue);
 	width: 89%;
 	margin: 5.5% auto;
 }
@@ -53,7 +54,7 @@ p {
 a {
 	font-weight: bold;
 	text-decoration: none;
-	color: var(--cyan);
+	color: var(--blue);
 }
 
 a:hover {
@@ -86,28 +87,33 @@ header {
 
 #burger {
 	display: block;
+	width: 12rem;
 	cursor: pointer;
-	padding: 12px;
-	margin: 8px;
+	padding: 8px;
+	margin: 0px;
+	font-family: monospace;
+	font-size: 100%;
+	font-size: 1em;
+	font-weight: bold;
 	transition-duration: 0.1s;
 	background-color: var(--grey);
-	border: 2px solid var(--blue);
-	color: var(--cyan);
+	border: 0px solid var(--grey);
+	color: var(--blue);
 }
 
 #burger:hover {
-	background-color: var(--blue);
+	background-color: var(--dark-blue);
 	color: var(--white);
 }
 
 #menu {
-	position: fixed;
+	position: absolute;
 	display: none;
-	left: 0;
-	width: 20%;
+	left: 8px;
+	width: 12rem;
 	height: 100%;
 	flex-direction: column;
-	background-color: var(--blue);
+	background-color: var(--grey);
 }
 
 #menu.show {
@@ -125,5 +131,5 @@ li {
 }
 
 li:hover {
-	background-color: var(--grey);
+	background-color: var(--dark-blue);
 }
