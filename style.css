@@ -22,8 +22,13 @@ body {
 
 #main-body {
 	background-color: var(--dark-blue);
-	width: 89%;
-	margin: 5.5% auto;
+	width: calc(100% - 6rem);
+	margin: 0 3rem 0 3rem;
+}
+
+#main-body.shrink {
+	width: calc(100% - 6rem - 12rem);
+	margin: 0 3rem 0 15rem;
 }
 
 h1, h2 {
@@ -33,8 +38,14 @@ h1, h2 {
 	padding: 24px 0px;
 }
 
+h1 {
+	margin-block-start: 8px;
+	margin-block-end: 8px;
+}
+
 h2 {
 	padding: 12px 0px;
+	font-size: 1.5em;
 	width: 78%;
 	margin: auto;
 }
@@ -89,7 +100,7 @@ header {
 	display: block;
 	width: 12rem;
 	cursor: pointer;
-	padding: 8px;
+	padding: 12px;
 	margin: 0px;
 	font-family: monospace;
 	font-size: 100%;
@@ -111,9 +122,9 @@ header {
 	display: none;
 	left: 8px;
 	width: 12rem;
-	height: 100%;
+	height: calc(100% - 56px);
 	flex-direction: column;
-	background-color: var(--grey);
+	background-color: var(--dark-blue);
 }
 
 #menu.show {
@@ -131,5 +142,5 @@ li {
 }
 
 li:hover {
-	background-color: var(--dark-blue);
+	background-color: var(--black);
 }
