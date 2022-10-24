@@ -27,8 +27,8 @@ body {
 }
 
 #main-body.shrink {
-	width: calc(100% - 6rem - 12rem);
-	margin: 0 3rem 0 15rem;
+	width: calc(100% - 6rem - 8rem);
+	margin: 0 3rem 0 11rem;
 }
 
 h1, h2 {
@@ -98,7 +98,7 @@ header {
 
 #burger {
 	display: block;
-	width: 12rem;
+	width: 8rem;
 	cursor: pointer;
 	padding: 12px;
 	margin: 0px;
@@ -120,8 +120,9 @@ header {
 #menu {
 	position: absolute;
 	display: none;
+	margin-top: 8px;
 	left: 8px;
-	width: 12rem;
+	width: 8rem;
 	height: calc(100% - 56px);
 	flex-direction: column;
 	background-color: var(--dark-blue);
@@ -143,4 +144,25 @@ li {
 
 li:hover {
 	background-color: var(--black);
+}
+
+@media only screen and (min-width: 800px){
+	header {
+		display: flex;
+	}
+	ol {
+	display: flex;
+	}
+	#menu {
+		position: relative;
+		width: 100%;
+		margin-top: 0px;
+		margin-right: 8px;
+		display: flex;
+		flex-direction: row;
+	}
+	#main-body.shrink {
+		width: calc(100% - 6rem);
+		margin: 0 3rem 0 3rem;
+	}
 }
