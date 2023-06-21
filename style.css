@@ -149,9 +149,14 @@ li:hover {
 @media only screen and (min-width: 800px){
 	header {
 		display: flex;
+		width: calc(800px - 8px);
 	}
 	ol {
 		display: flex;
+	}
+	body {
+		margin: 8px auto;
+		width: 800px;
 	}
 	#menu {
 		position: relative;
