@@ -151,6 +151,10 @@ li:hover {
 		display: flex;
 		width: calc(800px - 8px);
 	}
+	#burger:hover {
+		background-color: var(--grey);
+		color: var(--blue);
+	}
 	ol {
 		display: flex;
 	}
